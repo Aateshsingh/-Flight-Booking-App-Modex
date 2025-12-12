@@ -11,17 +11,32 @@ router.post("/login", async(req, res, next) => {
     try {
         User.findOne({ email: email }, (err, doc) => {
             console.log(doc);
-            if (err) {} else {
-                if (!doc) {} else {
+            if (err) {
+                console.error(err);
+                return res.status(500).json({ message: "Internal server error" });
+            } else {
+                if (!doc) {
+                    return res.status(401).json({ message: "Invalid credentials" });
+                } else {
                     bcrypt.compare(password, doc.password, function(error, response) {
                         console.log(response);
-                        const token = jwt.sign({ doc }, "top_secret");
+                        if (error) {
+                            console.error(error);
+                            return res.status(500).json({ message: "Internal server error" });
+                        }
+                        if (!response) {
+                            return res.status(401).json({ message: "Invalid credentials" });
+                        }
+                        const token = jwt.sign({ user: doc }, "top_secret");
                         res.status(200).json({ token });
                     });
                 }
             }
         });
-    } catch (error) {}
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ message: "Internal server error" });
+    }
     // passport.authenticate("login", async(err, user, info) => {
     //     try {
     //         if (err || !user) {

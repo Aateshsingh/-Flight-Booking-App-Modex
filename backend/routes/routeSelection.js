@@ -20,7 +20,7 @@ router.post('/', (req, res) => {
     })
 })
 
-router.post('/', (req, res) => {
+router.post('/id', (req, res) => {
 
     bus.findOne({ _id: req.body.bId }, (err, bus) => {
         if (err) {
