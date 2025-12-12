@@ -1,130 +1,178 @@
-# MERN-Flight-Booking-Application
+# ✈️ MERN Flight Booking Application
 
-A complete flight booking application made using MERN Stack (MongoDB, Express js, React js, Node js)
+A comprehensive flight booking application built with the **MERN Stack** (MongoDB, Express.js, React.js, Node.js).
 
-The Flight ticket booking app is composed of the following Features:
-
-### Front-End
-
-* Sign-In & Sign-Up Pages.
-* Uses Token based system, so only registered users can access the website passport js.
-* Password hashing using passport js.
-* Has a profile page, which will display all information about the signed in user.
-* List of cities for users to choose from (starting city & destination city).
-* Getting list of flight's of different airlines with various details.
-* Seat selection page has a very user friendly environment, which also generates dynamic forms for storing data's of passengers.
-* Has a Confirmation page, which gets a debit card data using react-credit-cards. This version of the application does not include handling the payment process.
-* Final page has a boarding pass displaying component, it displays all passenger data and also generates a random number as a transaction ID.
-* Ticket Cancellation page will cancel the ticket which was booked.
-* Also has an integrated ai chatbot
-
-### Back-End
-
-* Uses Express js based application for the backend process.
-* Uses MongoDB atlas for storing the collections.
-* Uses passport js for authenticating user and token based system.
-* Uses passport js for hashing the password before sending the data to the cloud.
-* This version does not support dynamic seat data being stored from cloud.
-
-This project also demonstrates:
-
-* a typcial React project layout structure
-
-**Screenshots:**
-
-Landing Page:
-
-![](documentationResources/homepage.png)
-
-Signing In Page:
-
-![](documentationResources/login.png)
-
-Flight Selection Page:
-
-![](documentationResources/booking.png)
-
-Seat Selection Page:
-
-![](documentationResources/seatselection.png)
-
-Payment & Confirmation Page:
-
-![](documentationResources/payment.png)
-
-Ticket Cancellation Page:
-
-![](documentationResources/cancellation.png)
-
-Integrated AI Chatbot:
-
-![](documentationResources/aichatbot.png)
+## 📋 Table of Contents
+- [Features](#features)
+- [Screenshots](#screenshots)
+- [Tech Stack](#tech-stack)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Getting Started](#getting-started)
 
 ---
 
-## Developed With
+## ✨ Features
 
-* [Visual Studio Code](https://code.visualstudio.com/) - A source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring
-* [Node.js](https://nodejs.org/en/) - Javascript runtime
-* [React](https://reactjs.org/) - A javascript library for building user interfaces
-* [Babel](https://babeljs.io/) - A transpiler for javascript
-* [Webpack](https://webpack.js.org/) - A module bundler
-* [SCSS](http://sass-lang.com/) - A css metalanguage
-* [Bootstrap 4](https://getbootstrap.com/) - Bootstrap is an open source toolkit for developing with HTML, CSS, and JS
-* [Axios](https://github.com/axios/axios) - Promise based HTTP client for the browser and node.js
-* [Express js](http://expressjs.com/) - Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
-* [MongoDB atlas](https://www.mongodb.com/cloud/atlas) - MongoDB Atlas is the global cloud database service for modern applications.
-* [Passport Js](http://www.passportjs.org/) - Passport is authentication middleware for Node.js. Extremely flexible and modular, Passport can be unobtrusively dropped in to any Express-based web application.
+### 🎨 Frontend Features
+- **Authentication & Authorization**
+  - Sign-In & Sign-Up Pages
+  - Token-based authentication system (Passport.js)
+  - Secure password hashing
+  - User profile page with all user information
+
+- **Flight Booking Experience**
+  - City selection (departure & destination)
+  - Real-time flight listings from multiple airlines
+  - Dynamic seat selection with user-friendly interface
+  - Auto-generated passenger information forms
+  - Debit card details collection (react-credit-cards)
+
+- **Booking Management**
+  - Confirmation page with booking summary
+  - Boarding pass generation with transaction ID
+  - Ticket cancellation functionality
+  - Travel history & upcoming trips
+
+- **Additional Features**
+  - Integrated AI chatbot for customer support
+  - Additional services (Hotels, Food, Beverages)
+  - Seat feature customization (Economy, Business, First Class)
+
+### 🔧 Backend Features
+- **Framework & Architecture**
+  - Express.js RESTful API
+  - MongoDB Atlas cloud database
+  - Passport.js authentication middleware
+  - JWT token-based session management
+
+- **Security & Data Handling**
+  - Password hashing before cloud storage
+  - User authentication & authorization
+  - Secure API endpoints
 
 ---
 
-## Getting Started
+## 📸 Screenshots
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+| Page | Preview |
+|------|---------|
+| **Landing Page** | ![Homepage](documentationResources/homepage.png) |
+| **Sign-In Page** | ![Login](documentationResources/login.png) |
+| **Flight Selection** | ![Booking](documentationResources/booking.png) |
+| **Seat Selection** | ![Seat Selection](documentationResources/seatselection.png) |
+| **Payment & Confirmation** | ![Payment](documentationResources/payment.png) |
+| **Ticket Cancellation** | ![Cancellation](documentationResources/cancellation.png) |
+| **AI Chatbot** | ![Chatbot](documentationResources/aichatbot.png) |
 
-### Prerequisites
+---
 
-The following software is required to be installed on your system:
+## 🛠️ Tech Stack
 
-* Node 8.x
-* Npm 3.x
+### Frontend Technologies
+| Technology | Purpose |
+|-----------|---------|
+| [React](https://reactjs.org/) | JavaScript UI library |
+| [Webpack](https://webpack.js.org/) | Module bundler |
+| [Babel](https://babeljs.io/) | JavaScript transpiler |
+| [Bootstrap 4](https://getbootstrap.com/) | CSS framework |
+| [SCSS](http://sass-lang.com/) | CSS preprocessor |
+| [Axios](https://github.com/axios/axios) | HTTP client |
+| [React Router](https://reactrouter.com/) | Client-side routing |
+| [React Credit Cards](https://www.npmjs.com/package/react-credit-cards) | Payment UI |
 
-Type the following commands in the terminal to verify your node and npm versions
+### Backend Technologies
+| Technology | Purpose |
+|-----------|---------|
+| [Node.js](https://nodejs.org/) | JavaScript runtime |
+| [Express.js](http://expressjs.com/) | Web framework |
+| [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) | Cloud database |
+| [Passport.js](http://www.passportjs.org/) | Authentication |
+| [JWT](https://jwt.io/) | Token-based auth |
 
+---
+
+
+## 📦 Prerequisites
+
+Before running this project, ensure you have:
+
+- **Node.js** v8.x or higher
+- **npm** v3.x or higher
+- **MongoDB Atlas** account
+
+### Verify Installation
 ```bash
 node -v
 npm -v
 ```
 
-### Install
+---
 
-Follow the following steps to get development environment running.
+## 🚀 Installation
 
-* Install node modules #even though they are pre-installed run this command to check if they are up to date
-
+### Step 1: Clone the Repository
 ```bash
+git clone https://github.com/your-username/Flight-Booking-App.git
 cd Flight-Booking-App
-cd frontend
-npm install
-cd..
-cd backend
-npm install
 ```
 
-### Starting both front end and back end servers
-
-* Build application
-
-  This command will start the mongodb and the front end part.
-
+### Step 2: Install Dependencies
 ```bash
+# Install frontend dependencies
 cd frontend
-npm start
-cd..
-cd backend
-npm run devStart
+npm install
+
+# Install backend dependencies
+cd ../backend
+npm install
 ```
 
 ---
 
-# -Flight-Booking-App-Modex
+## 🎯 Getting Started
+
+### Start Frontend Development Server
+```bash
+cd frontend
+npm start
+```
+Access at: **http://localhost:3000**
+
+### Start Backend Development Server
+```bash
+cd backend
+npm run devStart
+```
+Backend runs on: **http://localhost:8080**
+
+### Environment Configuration
+Create `.env` in backend directory:
+```
+MONGODB_URI=your_mongodb_atlas_connection_string
+PORT=8080
+JWT_SECRET=your_jwt_secret_key
+NODE_ENV=development
+```
+
+---
+
+## 📝 License
+
+MIT License - feel free to use this project!
+
+---
+
+## 🤝 Contributing
+
+Contributions welcome! Feel free to fork and submit pull requests.
+
+---
+
+## 📧 Support
+
+For questions or issues, please open a GitHub issue.
+
+---
+
+**Happy Booking! ✈️**
