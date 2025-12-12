@@ -38,7 +38,6 @@ export default class App extends React.Component {
 
     handleSubmit = e => {
         e.preventDefault()
-        const { issuer } = this.state
         const formData = [...e.target.elements]
             .filter(d => d.name)
             .reduce((acc, d) => {
@@ -93,17 +92,6 @@ export default class App extends React.Component {
     }
 
     render() {
-        const {
-            name,
-            number,
-            expiry,
-            cvc,
-            focused,
-            issuer,
-            formData,
-            token
-        } = this.state
-
         return (<div  >
             <div className='row' >
                 

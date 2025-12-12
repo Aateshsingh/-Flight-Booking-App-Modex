@@ -31,17 +31,17 @@ export default function ServicePage({ history }) {
         <div className="container">
             <div>
                 <nav className="mb-4 navbar navbar-expand-lg navbar-dark bg-unique hm-gradient">
-                    <a href="/#" className="navbar-brand Company-Log">SA</a>
+                    <a href="/" className="navbar-brand Company-Log">SA</a>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-3" aria-controls="navbarSupportedContent-3" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent-3">
                         <ul className="navbar-nav ml-auto nav-flex-icons ic">
                             <li className="nav-item">
-                                <a href="/#" className="nav-link waves-effect waves-light" onClick={e => handleBookAgainIcon(e)} style = {{color: "black"}}>Book Again</a>
+                                <a href="/" className="nav-link waves-effect waves-light" onClick={e => handleBookAgainIcon(e)} style = {{color: "black"}}>Book Again</a>
                             </li>
                             <li className="nav-item">
-                                <a href="/#" className="nav-link waves-effect waves-light" onClick={e => handleSignOut(e)}>Sign-Out</a>
+                                <a href="/" className="nav-link waves-effect waves-light" onClick={e => handleSignOut(e)}>Sign-Out</a>
                             </li>
                         </ul>
                     </div>
@@ -49,7 +49,7 @@ export default function ServicePage({ history }) {
             </div>
             <div >
             
-            <iframe src="https://giphy.com/embed/SY2hQpAMLnuxtgLT5C" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+            <iframe src="https://giphy.com/embed/SY2hQpAMLnuxtgLT5C" width="480" height="480" frameBorder="0" className="giphy-embed" allowFullScreen title="giphy animation"></iframe>
             </div>
 
         </div>

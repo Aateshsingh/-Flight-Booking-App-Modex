@@ -14,6 +14,8 @@ export default function Routeselector() {
     const renderBusList = (dataInp) => {
         if (Object.keys(dataInp).length > 0) {
             return (<BusList value={dataInp} />)
+        } else if (dataInp.length === 0) {
+            return (<div>No buses found for the selected route.</div>)
         }
     }
     const handleFromCity = e => {
@@ -44,7 +46,7 @@ export default function Routeselector() {
             <div className="form-group inline"></div>
             <div className="main-container">
                 <form className="form-inline" onSubmit={e => getRoutes(e)}>
-                    <select name="ad_account_selected" data-style="btn-new" class="selectpicker" onChange={e => { handleFromCity(e) }}>
+                    <select name="ad_account_selected" data-style="btn-new" className="selectpicker" onChange={e => { handleFromCity(e) }}>
                         <option>FROM</option>
                         <option>Chennai</option>
                         <option>Bangalore</option>
@@ -75,13 +77,13 @@ export default function Routeselector() {
 
 
                     </select>
-                    <select name="ad_account_selected" data-style="btn-new" class="selectpicker" onChange={e => { handleToCity(e) }}>
+                    <select name="ad_account_selected" data-style="btn-new" className="selectpicker" onChange={e => { handleToCity(e) }}>
                         <option>TO</option>
                         <option>Hyderabad</option>
                         <option>Coimbatore</option>
                         <option>Vishakapatnam</option>
                         <option>Bangalore</option>
-                        <option>Chenai</option>
+                        <option>Chennai</option>
                         <option>Delhi</option>
                         <option>Mumbai</option>
                         <option>Kolkata</option>

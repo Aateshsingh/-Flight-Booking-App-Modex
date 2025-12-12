@@ -1,4 +1,3 @@
-import React from 'react'
 import one from './images/1.jpg'
 const data =[
     {

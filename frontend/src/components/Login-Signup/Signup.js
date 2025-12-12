@@ -69,7 +69,7 @@ export default function Signup({ history }) {
                                                     (e) => handleChangeEvent(e, "name")}
                                             />
                                         </div>
-                                        <div class="form-group2" >
+                                        <div className="form-group2" >
                                             <label htmlFor="email" > Email - ID: </label>
                                             <input required id="email"
                                                 type="email"
@@ -78,7 +78,7 @@ export default function Signup({ history }) {
                                                     (e) => handleChangeEvent(e, "email")}
                                             />
                                         </div>
-                                        <div class="form-group2" >
+                                        <div className="form-group2" >
                                             <label htmlFor="mob-number" > Mobile - No.: </label>
                                             <input required id="mob-number"
                                                 type="text"
@@ -87,8 +87,8 @@ export default function Signup({ history }) {
                                                     (e) => handleChangeEvent(e, "mobile")}
                                             />
                                         </div>
-                                        <div class="form-check form-check-inline rd" >
-                                            <input required class="form-check-input"
+                                        <div className="form-check form-check-inline rd" >
+                                            <input required className="form-check-input"
                                                 type="radio"
                                                 id="Male"
                                                 name="gender"
@@ -96,12 +96,12 @@ export default function Signup({ history }) {
                                                 onChange={
                                                     (e) => handleChangeEvent(e, "gender")}
                                             />
-                                            <label class="form-check-label"
+                                            <label className="form-check-label"
                                                 htmlFor="Male" >
                                                 Male </label>
                                         </div>
-                                        <div class="form-check form-check-inline rd" >
-                                            <input required class="form-check-input"
+                                        <div className="form-check form-check-inline rd" >
+                                            <input required className="form-check-input"
                                                 type="radio"
                                                 id="Female"
                                                 name="gender"
@@ -109,11 +109,11 @@ export default function Signup({ history }) {
                                                 onChange={
                                                     (e) => handleChangeEvent(e, "gender")}
                                             />
-                                            <label class="form-check-label"
+                                            <label className="form-check-label"
                                                 htmlFor="Female" >
                                                 Female </label>
                                         </div>
-                                        <div class="form-group2" >
+                                        <div className="form-group2" >
                                             <label htmlFor="password" > Password: </label>
                                             <input required id="password"
                                                 type="password"
@@ -122,7 +122,7 @@ export default function Signup({ history }) {
                                                     (e) => handleChangeEvent(e, "password")}
                                             />
                                         </div>
-                                        <div class="form-group2" >
+                                        <div className="form-group2" >
                                             <input required type="submit"
                                                 value="submit"
                                                 className="btn-primary btnn form-submit sub-btn sgnUp" />
@@ -131,8 +131,8 @@ export default function Signup({ history }) {
                                             <small className="form-text text-muted link-text" >
                                                 Already a User ?
                                             </small>
-                                            <span className="signuptext" >
-                                                <a href="/#"
+                                                <span className="signuptext" >
+                                                <a href="/"
                                                     onClick={
                                                         (e) => getToSignIn(e)} >
                                                     Sign - In

@@ -5,6 +5,7 @@ import { FaFacebookF, FaTwitterSquare } from "react-icons/fa";
 export default function LogOrsign({ history }) {
 
     let [userData, setUserData] = useState({})
+    let [errorMessage, setErrorMessage] = useState('')
 
     const getToSignUp = e => {
         e.preventDefault() 
@@ -18,6 +19,7 @@ export default function LogOrsign({ history }) {
 
     const submitData = e => {
         e.preventDefault()
+        setErrorMessage('')
         // console.log(userData)
         logFunc.logUserIn(userData)
             .then(response => response.data)
@@ -25,6 +27,10 @@ export default function LogOrsign({ history }) {
                 let { token } = data
                 sessionStorage.setItem('authToken', token)
                 history.push('/routes')
+            })
+            .catch(error => {
+                console.error('Login failed:', error.response ? error.response.data : error.message)
+                setErrorMessage('Login failed: ' + (error.response ? error.response.data.message : 'Please try again'))
             })
     }
 
@@ -41,30 +47,31 @@ export default function LogOrsign({ history }) {
                                     <h2>Login</h2>
                                     <p>you chose the right option</p>
                                     <ul>
-                                        <li><a href="/#" className="facebook"><FaFacebookF /></a></li>
+                                        <li><a href="/" className="facebook"><FaFacebookF /></a></li>
                                     </ul>
                                     <ul>
-                                        <li><a href="/#" className="twitter"><FaTwitterSquare /></a></li>
+                                        <li><a href="/" className="twitter"><FaTwitterSquare /></a></li>
                                     </ul>
                                 </div>
                                 <div className="form-input">
                                     <h2>Enter Credentials</h2>
                                     <form onSubmit={(e) => { submitData(e) }}>
-                                        <div class="form-group">
+                                        <div className="form-group">
                                             <input className="loginInfo" type="email" name="name" required onChange={e => handleChangeEvent(e, 'email')} />
                                             <label>Email-Id</label>
                                         </div>
-                                        <div class="form-group">
+                                        <div className="form-group">
                                             <input className="loginInfo" type="password" name="password" required onChange={e => handleChangeEvent(e, 'password')} />
                                             <label>password</label>
                                         </div>
-                                        <div class="myform-button">
+                                        <div className="myform-button">
                                             <button type="submit" className="myform-btn">Login</button>
                                         </div>
+                                        {errorMessage && <div style={{color: 'red', marginTop: '10px'}}>{errorMessage}</div>}
                                         <div>
                                             <small className="form-text text-muted signup-text">Already a User?
                                             </small>
-                                            <span className="signUPtext"><a href="/#" onClick={(e) => getToSignUp(e)}>Sign-Up</a></span>
+                                                <span className="signUPtext"><a href="/" onClick={(e) => getToSignUp(e)}>Sign-Up</a></span>
                                         </div>
                                     </form>
                                 </div>

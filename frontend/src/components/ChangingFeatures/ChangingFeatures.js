@@ -85,12 +85,15 @@ export default function ChangingFeatures() {
         <div>
             <br></br>
             <table>
+                <thead>
                 <tr>
                     <th>Features</th>
                     <th>Economy</th>
                     <th>Business</th>
                     <th>First Class</th>
                 </tr>
+                </thead>
+                <tbody>
                 <tr>
                     <td>Seat Pitch</td>
                     <td>
@@ -234,6 +237,7 @@ export default function ChangingFeatures() {
                     </td>
                 </tr>
 
+                </tbody>
             </table>
             <br></br>
             <div style={{marginLeft: "27%" }}><input type="submit" onClick={e => { moveToCancelPage(e) }} className=" btn btn-primary btn-md getRoute" /></div>

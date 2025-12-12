@@ -23,96 +23,96 @@ export default class App extends React.Component {
             <><br></br>
             <div>
             <h1>Hotels</h1>
-                <div class="polaroid">
+                <div className="polaroid">
                     <a href='/cancelPage'><img src={aparts} alt="5 Terre" className="photo" /></a>
-                        <div class="hello">
+                        <div className="hello">
                             <p>Apartments</p>
                         </div>
                 </div>
-                <div class="polaroid">
+                <div className="polaroid">
                 <a href='/cancelPage'><img src={luxury} alt="5 Terre" className="photo" /></a>
-                        <div class="hello">
+                        <div className="hello">
                             <p>Luxury Hotels</p>
                         </div>
                 </div>
-                <div class="polaroid">
+                <div className="polaroid">
                 <a href='/cancelPage'> <img src={modern} alt="5 Terre" className="photo" /></a>
-                        <div class="hello">
+                        <div className="hello">
                             <p>Modern House</p>
                         </div>
                 </div>
-                <div class="polaroid">
+                <div className="polaroid">
                 <a href='/cancelPage'> <img src={resort} alt="5 Terre" className="photo" /></a>
-                        <div class="hello">
+                        <div className="hello">
                             <p>Resort</p>
                         </div>
                 </div>
-                <div class="polaroid">
+                <div className="polaroid">
                 <a href='/cancelPage'> <img src={suite} alt="5 Terre" className="photo" /></a>
-                        <div class="hello">
+                        <div className="hello">
                             <p>suite</p>
                         </div>
                 </div>
                 
                 <h1>Food Items</h1>
-                <div class="polaroid">
+                <div className="polaroid">
                 <a href='/cancelPage'> <img src={idli} alt="5 Terre" className="photo" /></a>
-                        <div class="hello">
+                        <div className="hello">
                             <p>IDLI</p>
                         </div>
                 </div>
-                <div class="polaroid">
+                <div className="polaroid">
                 <a href='/cancelPage'>  <img src={naan} alt="5 Terre" className="photo" /></a>
-                        <div class="hello">
+                        <div className="hello">
                             <p>TANDOORI NAAN</p>
                         </div>
                 </div>
-                <div class="polaroid">
+                <div className="polaroid">
                 <a href='/cancelPage'>   <img src={poori} alt="5 Terre" className="photo" /></a>
-                        <div class="hello">
+                        <div className="hello">
                             <p>POORI</p>
                         </div>
                 </div>
-                <div class="polaroid">
+                <div className="polaroid">
                 <a href='/cancelPage'>   <img src={pulav} alt="5 Terre" className="photo" /></a>
-                        <div class="hello">
+                        <div className="hello">
                             <p>PULAV</p>
                         </div>
                 </div>
-                <div class="polaroid">
+                <div className="polaroid">
                 <a href='/cancelPage'>   <img src={vada} alt="5 Terre" className="photo" /></a>
-                        <div class="hello">
+                        <div className="hello">
                             <p>VADA</p>
                         </div>
                 </div>
-                <div class="polaroid">
+                <div className="polaroid">
                 <a href='/cancelPage'>   <img src={curd} alt="5 Terre" className="photo" /></a>
-                        <div class="hello">
+                        <div className="hello">
                             <p>CURD</p>
                         </div>
                 </div>
                 <h1>Beverages</h1>
-                <div class="polaroid">
+                <div className="polaroid">
                 <a href='/cancelPage'>   <img src={cola} alt="5 Terre" className="photo" /></a>
-                        <div class="hello">
+                        <div className="hello">
                             <p>Cola</p>
                         </div>
                 </div>
-                <div class="polaroid">
+                <div className="polaroid">
                 <a href='/cancelPage'>   <img src={lime} alt="5 Terre" className="photo" /></a>
-                        <div class="hello">
+                        <div className="hello">
                             <p>Lime</p>
                         </div>
                 </div>
-                <div class="polaroid">
+                <div className="polaroid">
                 <a href='/cancelPage'>  <img src={mocktail} alt="5 Terre" className="photo" /></a>
-                        <div class="hello">
+                        <div className="hello">
                             <p>Mocktail</p>
                         </div>
                 </div>
-                <div class="polaroid">
+                <div className="polaroid">
                 <a href='/cancelPage'> <img src={cocktail} alt="5 Terre" className="photo" /></a>
-                        <div class="hello">
+                        <div className="hello">
                             <p>Cocktail</p>
                         </div>
                 </div>

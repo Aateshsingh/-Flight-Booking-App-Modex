@@ -25,7 +25,7 @@ export default function Profile({ history }) {
                         className='profile-pic' />
                     <h1 className='heading' > {token?.name} </h1>{' '}
                         <div className='location' >
-                            < svg class='svg-icon'
+                            < svg className='svg-icon'
                                 width='18'
                                 height='18'
                                 viewBox='0 0 24 24'
